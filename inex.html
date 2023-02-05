@@ -1,116 +1,178 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <title>Coding Language Test</title>
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
-</head>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Suggester</title>
+  </head>
+
   <body>
-      <div class="innerbody">
-        <p>Coding is a very fun and challenging field to go into. Developers come from many different walks of life wether that be self taught, bootcamps, or college. One thing that helps when you start this adventure is knowing which languages to start learning. There are many different languages, so take this test to see which ones would benefit you most!</p>
+    <div class="container">
+      <div class="heading">
+        <h1>Which Coding Language Should you Learn First?</h1>
+        <p>There are many different languages! some may say that picking which one is harder than coding itself!</p>
+        <p>Interested in coding and want to find out which language you should start with?  <strong>Take this quiz and find out!</strong></p>
+      </div>
 
-        <h1>Discover the <strong>best</strong> coding language to learn with this test! Select which answer excites you most!</h1>
-        <form id="Test">
-          <label for="Q1"><strong>What kind of company do you want to work in?</strong></label>
-            <br>
-          <label>
-            <input type="radio" name="Q1" value="1">
-            I would feel more comfortable in a small company!
-          <br>
-          <label>
-            <input type="radio" name="Q1" value="2">
-            I am going to be self employed!
-          </label>
-            <br>
-          <label>
-            <input type="radio" name="Q1" value="3">
-            I prefer to work for a big company!
-          </label>
+      <div class="quiz">
+        <form class="inputs">
 
-          <br>
+          <div class="form-group">
+            <label for="programType">Question 1:</label>
+            <p>Do you enjoy video games?</p>
+            <div class="radio">
+              <label for="q1Item1" class="block">
+                <input type="radio" name="programType" value="js" checked>
+                Yes! My favorite activity!
+              </label>
+              <label for="q1Item2" class="block">
+                <input type="radio" name="programType" value="c+">
+                I play from time to time.
+              </label>
+              <label for="q1Item3" class="block">
+                <input type="radio" name="programType" value="pyt">
+                I dont really care for video games.
+              </label>
 
-          <label for="Q2"><strong>What kind of enviroment do you want to work in?</strong></label>
-            <br>
-          <label>
-            <input type="radio" name="Q2" value="1">
-            Office.
-            <br>
-          <label>
-            <input type="radio" name="Q2" value="2">
-            Travel.
-            <br>
-          <label>
-            <input type="radio" name="Q2" value="3">
-            Home.
-          </label>
-    
-            <br>
+            </div>
+          </div>
 
-          <label for="Q3"><strong>What do you want to work with?</strong></label>
-            <br>
-          <label>
-            <input type="radio" name="Q3" value="1">
-            Back-End developing.
-            <br>
-          <label>
-            <input type="radio" name="Q3" value="2">
-            Front-End developing.
-            <br>
-          <label>
-            <input type="radio" name="Q3" value="3">
-            Game development!
-          </label>
+          <div class="form-group">
+            <label for="learningEase">Question 2:</label>
+            <p>Do you enjoy a challange?</p>
+            <div class="radio">
+              <label for="q2Item1" class="block">
+                <input type="radio" name="learningEase" value="pyt" checked>
+                Give it to me as easy as it gets
+              </label>
+              <label for="q2Item2" class="block">
+                <input type="radio" name="learningEase" value="c+">
+                Moderate difficulty is OK with me.
+              </label>
+              <label for="q2Item3" class="block">
+                <input type="radio" name="learningEase" value="js">
+                I enjoy a challenge.
+              </label>
 
-            <br>
-  
-          <label for="Q4"><strong>What is your experience with coding?</strong></label>
-            <br>
-          <label>
-            <input type="radio" name="Q4" value="1">
-            Little to none.
-            <br>
-          <label>
-            <input type="radio" name="Q4" value="2">
-            Comfortable to little.
-            <br>
-          <label>
-            <input type="radio" name="Q4" value="3">
-            Expert to comfortable.
-          </label>
-    
-            <br>
+            </div>
+          </div>
 
-          <label for="Q5"><strong>Do you want to teach you developer skills to new developers?</strong></label>
-            <br>
-          <label>
-            <input type="radio" name="Q5" value="1">
-            Yes, I yearn to pass on my knowledge.
-            <br>
-          <label>
-            <input type="radio" name="Q5" value="2">
-            I will help if asked but I dont seek to teach.
-            <br>
-          <label>
-            <input type="radio" name="Q5" value="3">
-            Teaching is not my style.
-          </label>
+          <div class="form-group">
+            <label for="companyType">Question 3:</label>
+            <p>What kind of company are you planning to work for?</p>
+            <div class="radio">
+              <label for="q3Item1" class="block">
+                <input type="radio" name="companyType" value="c+" checked>
+                A small startup company.
+              </label>
+              <label for="q3Item2" class="block">
+                <input type="radio" name="companyType" value="pyt">
+                A large tec company likeGoogle.
+              </label>
+              <label for="q3Item3" class="block">
+                <input type="radio" name="companyType" value="js">
+                Anywhere I can find work is fine with me!
+              </label>
 
-            <br>
-            <br>
-    
-          <button type="submit" class="btn">Go!</button>
-            <br>
-          <button type="reset" class="btn">Reset Test!</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="flexibility">Question 4:</label>
+            <p>Do you prefer more flexibility or more rules in coding and solutions?</p>
+            <div class="radio">
+              <label for="q4Item1" class="block">
+                <input type="radio" name="flexibility" value="c+" checked>
+                More flexibility
+              </label>
+              <label for="q4Item2" class="block">
+                <input type="radio" name="flexibility" value="pyt">
+                More rules
+              </label>
+              <label for="q4Item3" class="block">
+                <input type="radio" name="flexibility" value="js">
+                No preference
+              </label>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="partner">Question 5:</label>
+            <p>Do you like nature?</p>
+            <div class="radio">
+              <label for="q5Item1" class="block">
+                <input type="radio" name="partner" value="js" checked>
+                Yes
+              </label>
+              <label for="q5Item2" class="block">
+                <input type="radio" name="partner" value="pyt">
+                Eh
+              </label>
+              <label for="q5Item3" class="block">
+                <input type="radio" name="partner" value="c+">
+                No!
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-success">Show Results</button>
         </form>
-    </body>
-      <h2>Results</h2>
-      <p id="output"></p>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="one" class="hidden">
-  </div>
+      </div>
+
+      <div class="well results">
+        <h2><span class="nameInsert"></span> You should start with:</h2>
+
+        <div id="javascript">
+          <h3>Javascript</h3>
+          <p>Javascript is a language that gives websites life by making them interactive, dynamic, and interesting to use.  It can be used to program both front and back-end, however is mainly used for designing websites and apps.  It is a very popular and powerful language and can be used in all browsers.</p>
+          <h4>Other Features:</h4>
+          <ul>
+            <li>General-purpose language</li>
+            <li>Moderate learning curve</li>
+            <li>Used in many larger companies or anywhere webpages are used</li>
+            <li>Useful to develop applications quickly with good performance and scalability</li>
+            <li>Quick performance</li>
+            <li>Generally flexible in coding and solutions</li>
+            <li>Can be difficult to debug and maintain if used incorrectly</li>
+          </ul>
+        </div>
+
+        <div id="c+">
+          <h3>C+</h3>
+          <p> C++ is still in great demand in 2023 due to its exceptional dependability, performance, and scalability. Video game development is one of the most notable uses of C++. Unity Engine, PhyreEngine, and Unreal are all C++-based engines used by several prominent video game companies.</p>
+          <h4>Other Features:</h4>
+          <ul>
+            <li>General-purpose language</li>
+            <li>Moderate learning curve</li>
+            <li>Used in many start-up companies</li>
+            <li>Useful for rapid application development or CPU intensive applications</li>
+            <li>Slow performance</li>
+            <li>Flexible coding and solutions</li>
+            <li>Can be time-consuming to debug and difficult to maintain</li>
+          </ul>
+        </div>
+
+        <div id="python">
+          <h3>Python</h3>
+          <p>Python is a very versatile language with many applications in different areas such as data analysis, web applications, game development, and information security.  It is one of the most beginner-friendly languages to learn with a clean, intuitive structure that reads almost like English.  </p>
+          <h4>Other Features:</h4>
+          <ul>
+            <li>General-purpose language</li>
+            <li>Easy learning curve</li>
+            <li>Used in scientific and academic fields for analyzing data as well as some big tech companies</li>
+            <li>Useful for creating powerful computational libraries</li>
+            <li>Slow performance</li>
+            <li>Rigid coding rules and solutions</li>
+            <li>Can be more pain-free to debug but have more errors when run and take longer to develop projects</li>
+          </ul>
+        </div>
+
+      </div>
+      
+    </div>
   </body>
-  </html>
+</html>
